@@ -61,7 +61,7 @@ def main():
         hfg_vocoder = load_hifigan(args.hfg_checkpoint, device)
 
     if tokenizer_name == "matcha":
-            tokenizer = process_and_phonemize_text_matcha
+        tokenizer = process_and_phonemize_text_matcha
     elif tokenizer_name == "piper":
         tokenizer = process_and_phonemize_text_piper
     else:
